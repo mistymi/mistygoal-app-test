@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.mistygoals.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/goal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/own"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已获得积分："
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="40dp" />
+
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/choice"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/goal"
+            android:rowCount="6"
+            android:columnCount="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/getup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="早起（10分）"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成一项basic task(10分)"
+                android:textSize="29dp" />
+
+            <Button
+                android:id="@+id/self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:text="完成一项self improve(15分)"/>
+
+            <Button
+                android:id="@+id/run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="跑步(15分)"/>
+
+            <Button
+                android:id="@+id/bcz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="百词斩打卡(5分)"/>
+
+            <Button
+                android:id="@+id/reading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="阅读30min(5分)"/>
+
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/choice"
+            android:layout_marginTop="14dp"
+            android:text="123" />
+
+        <Button
+            android:id="@+id/duihuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choice"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/test"
+            android:text="积分兑换"
+            android:textSize="20dp" />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
